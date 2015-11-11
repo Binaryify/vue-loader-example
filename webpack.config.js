@@ -7,18 +7,20 @@ module.exports = {
     publicPath: 'dist/',
     filename: 'build.js'
   },
+  vue: {
+  loaders: {
+    scss: 'style!css!sass'
+  }
+},
   module: {
-    loaders: [
-      {
-        test: /\.vue$/,
-        loader: 'vue'
-      },
-      {
-        // edit this for additional asset file types
-        test: /\.(png|jpg|gif)$/,
-        loader: 'file?name=[name].[ext]?[hash]'
-      }
-    ]
+    loaders: [{
+      test: /\.vue$/,
+      loader: 'vue'
+    }, {
+      // edit this for additional asset file types
+      test: /\.(png|jpg|gif)$/,
+      loader: 'file?name=[name].[ext]?[hash]'
+    }]
   }
 }
 
