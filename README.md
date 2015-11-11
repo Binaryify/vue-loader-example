@@ -9,6 +9,16 @@ npm install
 npm run dev
 # go to http://localhost:8080/webpack-dev-server/
 ```
+### sass/scss
+```
+vue: {
+  loaders: {
+    scss: 'style!css!sass'
+  }
+}
+
+```
+
 
 #### ES2015 by Default
 
