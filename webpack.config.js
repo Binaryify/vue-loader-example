@@ -7,10 +7,10 @@ module.exports = {
     filename: 'build.js'
   },
   vue: {
-  loaders: {
-    scss: 'style!css!sass'
-  }
-},
+    loaders: {
+      scss: 'style!css!sass'
+    }
+  },
   module: {
     loaders: [{
       test: /\.vue$/,
