@@ -20,6 +20,10 @@ module.exports = {
       test: /\.(png|jpg|gif)$/,
       loader: 'file?name=[name].[ext]?[hash]'
     }]
+  },
+  babel: {
+    presets: ['es2015', 'stage-0'],
+    plugins: ['transform-runtime']
   }
 }
 
