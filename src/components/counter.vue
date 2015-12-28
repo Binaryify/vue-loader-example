@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="counter">
     <h1>I am a Counter Component. Edit me in dev mode.</h1>
     <p>Current count: {{count}}</p>
   </div>
