@@ -5,10 +5,20 @@
 ## Setup
 
 ``` bash
+# install dependencies
 npm install
+
+# serve with hot reload at localhost:8080
 npm run dev
-# go to http://localhost:8080/webpack-dev-server/
+
+# build for production with minification
+npm run build
+
+# run unit tests
+npm test
 ```
+
+
 ### sass/scss
 ```
 vue: {
