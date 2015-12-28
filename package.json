@@ -9,6 +9,8 @@
     "test": "karma start build/karma.conf.js"
   },
   "dependencies": {
+    "node-sass": "^3.4.2",
+    "sass-loader": "^3.1.2",
     "vue": "^1.0.0"
   },
   "devDependencies": {
