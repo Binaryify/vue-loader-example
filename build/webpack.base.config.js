@@ -36,7 +36,8 @@ module.exports = {
   vue: {
     loaders: {
       js: 'babel!eslint',
-      scss: 'style!css!sass'
-    }
+      scss: 'style!css!sass!postcss'
+    },
+    postcss: [require('cssnext')(),require('postcss-nested')(),require('postcss-mixins')()]
   }
 }

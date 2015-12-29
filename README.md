@@ -19,16 +19,34 @@ npm test
 ```
 
 
-### sass/scss
+### sass/scss&postcss
 ```
 vue: {
   loaders: {
-    scss: 'style!css!sass'
-  }
+    js: 'babel!eslint',
+    scss: 'style!css!sass!postcss'
+  },
+  postcss: [require('cssnext')(),require('postcss-nested')(),require('postcss-mixins')()]
 }
 
-```
+<style scoped lang="scss">
+.red{
+  .test{
+    color:blue !important;
+    transform:rotateX(30deg) rotateY(30deg) translateY(50px);
+  }
+}
+</style>
 
+<!-- retult: -->
+<style>
+.red .test[_v-3def8906]{
+    color: blue !important;
+    -webkit-transform: rotateX(30deg) rotateY(30deg) translateY(50px);
+    transform: rotateX(30deg) rotateY(30deg) translateY(50px);
+}
+</style>
+```
 
 #### ES2015 by Default
 

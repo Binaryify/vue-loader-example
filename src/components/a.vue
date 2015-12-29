@@ -8,6 +8,7 @@
 .red{
   .test{
     color:blue !important;
+    transform:rotateX(30deg) rotateY(30deg) translateY(50px);
   }
 }
 </style>

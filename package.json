@@ -9,7 +9,11 @@
     "test": "karma start build/karma.conf.js"
   },
   "dependencies": {
+    "cssnext": "^1.8.4",
     "node-sass": "^3.4.2",
+    "postcss-loader": "^0.8.0",
+    "postcss-mixins": "^3.0.2",
+    "postcss-nested": "^1.0.0",
     "sass-loader": "^3.1.2",
     "vue": "^1.0.0"
   },
